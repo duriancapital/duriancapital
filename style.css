@@ -9,12 +9,15 @@ body, html {
 }
 
 .image-container {
-    width: 512px; /* Original image width */
-    max-width: 100%; /* Ensures container doesn't exceed viewport width */
+    max-width: 512px; /* Max width of the image */
+    width: 100%; /* Responsive width */
     margin: auto; /* Centering for smaller devices */
+    display: flex; /* Using flex to center the image */
+    justify-content: center;
+    align-items: center;
 }
 
 .responsive-image {
-    width: 100%; /* Makes the image responsive */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 100%; /* Limiting image to container's width */
+    height: auto; /* Maintaining aspect ratio */
 }
